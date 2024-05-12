@@ -14,7 +14,7 @@ MySQL and PHP work well together to create webpages. The relational database adm
 
 ![](assets/20240512_193237_ticketing.png)
 
-If you have any inquiries please feel free to reach me at personal email: cjohneriel@gmail.com.Thank you
+If you have any inquiries please feel free to reach me at personal email: cjohneriel@gmail.com
 
 
 
