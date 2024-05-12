@@ -8,20 +8,31 @@ MySQL and PHP work well together to create webpages. The relational database adm
 
 # Sample Screenshots
 
+### Splash Page
+
 ![](assets/20240512_193227_splash.png)
+
+### Home Page
 
 ![](assets/20240512_193132_dashboard.png)
 
+### Seats Page
+
 ![](assets/20240512_193237_ticketing.png)
 
+### Payment Configuration Page
+
+![](assets/20240512_200218_credit_card.png)
+
+### Seats Configuration Page
+
+![](assets/20240512_200227_seats.png)
+
+### Admin Dashboard Page
+
+![](assets/20240512_200239_admin.png)
+
+
+
 If you have any inquiries please feel free to reach me at personal email: cjohneriel@gmail.com
-
-
-
-
-
-
-
-
-
 
