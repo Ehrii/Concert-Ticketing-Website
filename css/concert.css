@@ -1,0 +1,400 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .cardholder {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    margin: 6rem;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: auto 0px;
+  }
+
+  .card::after {
+    content: "";
+    z-index: -1;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #14FFEC 0%, #00ADB5 100%);
+    transform: translate3d(0, 0, 0) scale(1.0);
+    filter: blur(20px);
+  }
+
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: flex;
+    word-wrap: break-word;
+  }
+
+  .card p {
+    font-size: 16px;
+    word-wrap: break-word;
+
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 95%;
+    }
+  }
+
+
+
+  .card p:not(.heading) {
+    font-size: 14px;
+  }
+
+  .card p:last-child {
+    color: #14FFEC;
+    font-weight: 600;
+  }
+
+  .card:hover::after {
+    filter: blur(30px);
+  }
+
+
+
+  /* Apply a box-sizing border-box to all elements */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+  }
+
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00ADB5;
+  }
+
+  /* Banner styles */
+  .banner {
+    background-image: url('images/conbg.png');
+    background-color: #212121;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    background-blend-mode: soft-light;
+    color: #fff;
+    width: 100%;
+    /* Make the banner full width */
+    margin-left: auto;
+    /* Center the banner horizontally */
+    margin-right: auto;
+    /* Center the banner horizontally */
+    max-width: 100%;
+    /* Ensure the image is responsive */
+
+  }
+
+  .banner h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .banner p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ADB5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: #009192;
+  }
+
+
+  :root {
+
+    --main-color: #00ADB5;
+  }
+
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+
+  }
+
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  }
+
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: #444;
+  }
+
+
+  html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+  }
+
+  body {
+
+    background-color: #222;
+  }
+
+  section .con {
+    background-color: #222831;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+
+  }
+
+  .header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+
+  }
+
+
+  .header .navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 2rem;
+
+
+  }
+
+  .header .navbar a:hover {
+    color: #00ADB5;
+  }
+
+  #menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+
+  }
+
+
+
+
+  .home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+  }
+
+
+  .home .content h3 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+  }
+
+  .home .content h3 span {
+    color: var(--main-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+  }
+
+  .con .content2 {
+    text-align: center;
+    padding-top: 3rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    font-size: large;
+  }
+
+
+
+  .con .content2 h3 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+  }
+
+
+  .con .content2 h3 span {
+    color: var(--main-color);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+  }
+
+
+
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: small;
+  }
+
+  .btn:hover {
+    background: var(--main-color);
+
+  }
+
+
+
+
+  @media (max-width:991px) {
+
+    html {
+      font-size: 55%;
+
+    }
+
+
+    .header {
+      padding: 1.5rem 2rem;
+
+    }
+
+
+  }
+
+
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+
+
+
+
+
+  @media (max-width:768px) {
+
+    #menu-bars {
+      display: initial;
+    }
+
+    .header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border-top: .1rem solid #222;
+      background: #333;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a {
+      display: flex;
+      background: #222;
+      border-radius: .5rem;
+      padding: 1.3rem;
+      margin: 1.3rem;
+      font-size: 2rem;
+
+    }
+
+
+  }
+
+
+  @media (max-width:450px) {
+
+    html {
+      font-size: 50%;
+    }
+
+  }

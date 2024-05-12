@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 50px;
+    background-image: url(images/ticketsbg.png);
+    background-size: cover;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Default scrollbar width */
+    scrollbar-color: #11999E #f8f9fa; /* Scrollbar color */
+}
+
+/* Scrollbar styles */
+body::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Thumb color */
+    border-radius: 10px; /* Rounding of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f8f9fa; /* Track color */
+    border-radius: 10px; /* Rounding of the track */
+}
+
+h1 {
+    color: #007bff;
+    /* Bootstrap primary color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #11999E;
+    color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+td {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
+
+    background-color: #f8f9fa;
+}
+
+.btn-cancel {
+    color: #fff;
+    background-color: #dc3545;
+    /* Bootstrap danger color */
+    border-color: #dc3545;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.8);
+
+}
+
+.btn-cancel:hover {
+    color: #fff;
+    background-color: #bd2130;
+    /* Darker red for hover effect */
+    border-color: #bd2130;
+}
+
+

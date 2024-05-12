@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(images/adminbg3.png) center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #373b41;
+    background-blend-mode: soft-light;
+}
+
+.scrollcon {
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: cyan transparent;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: cyan;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+
+
+.searchinput {
+    color: white;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: rgba(243, 243, 243, 0.333);
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color: #393E46;
+    padding: .8rem 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.table__header .input-group {
+    width: 35%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.table__header .input-group:hover {
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.table__header .input-group input {
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    /* background-color: #fffb; */
+    background-color: #d2f8fa;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+/* DASHBOARD */
+.dashboard-container {
+    background-color: #222831;
+    /* Set a white background color */
+    /* border: 1px solid #ced4da;     */
+    border-radius: 8px;
+    /* Round the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+    padding: 20px;
+    /* Add padding for content spacing */
+    margin: 20px;
+    /* Add margin for separation between containers */
+    text-align: center;
+    /* Center the content */
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition effect */
+    margin-bottom: 20px;
+    /* Add more margin below the icons */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.dashboard-container:hover {
+    transform: scale(1.05);
+    /* Scale the container on hover for a subtle effect */
+}
+
+.dashboard-container i {
+    font-size: 50px;
+    /* Adjust the size according to your preference */
+    color: #007bff;
+}
+
+.dashboard-container h2 {
+    color: #d2f8fa;
+    /* Set a blue color for the heading */
+}
+
+.dashboard-container p {
+    font-size: 18px;
+    /* Set the font size for the numbers */
+    font-weight: bold;
+    /* Make the numbers bold */
+    color: #007bff;
+    /* Set the color for the numbers */
+}
+
+
+
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.link-dark i.fa-pen-to-square {
+    margin-right: 10px;
+    /* Adjust the value according to your preference */
+    color: green;
+    /* Change the color to your desired value */
+    font-size: 20px;
+    /* Adjust the value to change the size of the icon */
+
+}
+
+.link-dark i.fa-plus-square {
+    margin-right: 10px;
+    /* Adjust the value according to your preference */
+    color: green;
+    /* Change the color to your desired value */
+    font-size: 20px;
+    /* Adjust the value to change the size of the icon */
+
+}
+
+
+.link-dark i.fa-trash {
+    color: red;
+    /* Change the color to your desired value */
+    font-size: 20px;
+    /* Adjust the value to change the size of the icon */
+
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-size: larger;
+    color: #6fcaea;
+    background-color: #333;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+
+.status {
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.pending {
+    background-color: #ebc474;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+
+    text-align: center;
+    font-size: 1rem;
+
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow {
+    border: 1.4px solid #6c00bd;
+}
+
+thead th:hover {
+    color: #007bff;
+}
+
+thead th.active span.icon-arrow {
+    background-color: #6c00bd;
+    color: #fff;
+}
+
+thead th.asc span.icon-arrow {
+    transform: rotate(180deg);
+}
+
+thead th.active,
+tbody td.active {
+    color: #6c00bd;
+}
+
+
+
+
+
+
+/************************** for sidebar ***********************************/
+.sidebar {
+    flex-basis: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 .2rem .5rem #0004;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align content */
+    border-radius: 10px;
+    margin-right: 30px;
+    /* Add margin to the right side for spacing */
+
+}
+
+.sidebar img {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+
+.avatar-container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 7px 0px 6px rgba(0, 0, 0, 1);
+    /* Add a noticeable box shadow */
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.icon {
+    color: #007bff;
+    /* Change this to your desired color code */
+}
+
+.admincon td p {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+}
+
+#clock {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    font-weight: 900;
+    color: #333;
+    text-align: center;
+
+}
+
+.hidden-cell {
+    visibility: hidden;
+}
+
+.sidebar-nav {
+    margin-top: 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ddd;
+    /* Link text color */
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #555;
+    /* Border color */
+}
+
+.sidebar-nav a:hover {
+    background-color: #555;
+    /* Hover background color */
+}
+
+@media only screen and (max-width: 1400px) {
+    main.table {
+        width: 70vw;
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+
+    }
+
+
+    .sidebar {
+        flex-basis: 100%;
+        margin-right: 0px;
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 85%;
+
+    }
+}
